@@ -81,13 +81,19 @@ public class ScreenSaverActivity extends Activity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_MENU) {
-            finish();
-        } else if (keyCode == KeyEvent.KEYCODE_HOME) {
+        if (keyCode == KeyEvent.KEYCODE_MENU || keyCode == KeyEvent.KEYCODE_HOME
+                || keyCode == KeyEvent.KEYCODE_BACK) {
+            Log.d(TAG, "onKeyDown: " + keyCode);
             finish();
         }
         return super.onKeyDown(keyCode, event);
     }
+
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event) {
+//        finish();
+//        return super.onTouchEvent(event);
+//    }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {    // 沉浸式模式
