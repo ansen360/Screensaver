@@ -89,11 +89,11 @@ public class ScreenSaverActivity extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        finish();
-//        return super.onTouchEvent(event);
-//    }
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        finish();
+        return super.onTouchEvent(event);
+    }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {    // 沉浸式模式
