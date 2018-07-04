@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 22
     defaultConfig {
-        applicationId "com.ansen.screensaver2"
+        applicationId "com.ansen.screensaver"
         minSdkVersion 22
         targetSdkVersion 22
         versionCode 1
