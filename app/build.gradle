@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 22
     defaultConfig {
-        applicationId "com.ansen.screensaver"
+        applicationId "com.ansen.screensaver2"
         minSdkVersion 22
         targetSdkVersion 22
         versionCode 1
@@ -14,6 +14,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "Screensaver.apk"
+            }
+
         }
     }
 }

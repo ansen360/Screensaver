@@ -19,7 +19,7 @@
             android:excludeFromRecents="true"
             android:label="@string/title_activity_screen_saver"
             android:launchMode="singleTask"
-            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
 
         <activity
